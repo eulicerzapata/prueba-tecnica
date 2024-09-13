@@ -1,0 +1,364 @@
+/* Definición de fuentes personalizadas */
+
+@font-face {
+  font-family: "Lato-Black";
+  src: url("../fonts/Lato-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("../fonts/Lato-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../fonts/Lato-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato-Italic";
+  src: url("../fonts/Lato-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 2fr 1fr 0.25fr; /* Diseño de columnas */
+  justify-content: space-between;
+  padding: 20px;
+  height: calc(90vh - 150px);
+}
+
+/* Estilos generales para el cuerpo de la página */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../imagenes/granjero.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Estilos para el encabezado */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+}
+
+.header i {
+  font-size: 24px;
+  margin-right: 50px;
+  color: #007bff;
+}
+
+.header h1 {
+  font-size: 22px;
+  color: #4d4d4d;
+  font-weight: 900;
+  font-family: "Lato-Black", sans-serif; /* Fuente y respaldo genérico */
+  margin: 0; /* Margen cero */
+}
+
+/* Estilos para el contenedor de imágenes */
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 90%;
+  height: 90%;
+}
+
+/* Estilos para el contenedor de texto */
+.text-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.welcome {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.welcome h2 {
+  width: 381px;
+  height: 34px;
+  font-size: 30px;
+  line-height: 46px;
+  color: #4d4d4d;
+  font-weight: 700;
+  font-family: "Lato-Bold", sans-serif;
+  margin: 0;
+}
+
+.welcome p {
+  width: 435px;
+  height: 80px;
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: 19px;
+  color: #737373;
+  font-weight: 400;
+  font-family: "Lato-Regular";
+}
+
+/* Estilos para las instrucciones */
+.instructions {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.instructions i {
+  font-size: 30px;
+  color: #007aff;
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #007bff;
+  display: inline-block;
+}
+
+.separator {
+  width: 5px;
+  background-color: #007bff;
+  height: 90px;
+  margin-right: 8px;
+}
+
+.instructions h3 {
+  width: 362px;
+  font-size: 24px;
+  color: #007aff;
+  font-weight: 700;
+  font-family: "Lato-Bold", sans-serif;
+  margin: 0;
+}
+
+.instructions p {
+  font-size: 16px;
+  color: #007aff;
+  font-weight: 400;
+  font-family: "Lato-Italic", sans-serif;
+  margin: 0;
+}
+
+/* Estilos para los botones en el contenedor */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+  padding: 20px 0;
+}
+
+/* Estilos generales para los botones */
+.button {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  border: 2px solid;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+  width: 330px;
+  height: 100px;
+}
+
+/* Estilo específico para el botón verde */
+.button.green span {
+  padding-left: 50px;
+  line-height: 1.2;
+  font-size: 25px;
+  line-height: 27px;
+  color: #749328;
+  font-weight: 700;
+  font-family: "Lato-Bold", sans-serif;
+}
+
+/* Estilo específico para el botón naranja */
+.button.orange span {
+  padding-left: 50px;
+  line-height: 1.2;
+  font-size: 25px;
+  line-height: 27px;
+  color: #ff802c;
+  font-weight: 700;
+  font-family: "Lato-Bold", sans-serif;
+}
+
+/* Estilo del contenedor del icono en el botón */
+.button .icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+/* Estilos específicos para el botón verde */
+.button.green {
+  border-color: #92c47c;
+  background-color: #ffffff;
+  color: #27632a;
+}
+
+.button.green:hover {
+  background-color: #ffffff; /* Color de fondo en hover */
+  color: #27632a; /* Color del texto en hover */
+}
+
+/* Estilos específicos para el botón naranja */
+.button.orange {
+  border-color: #f8cecc;
+  background-color: #ffffff;
+  color: #d9534f;
+}
+
+.button.orange:hover {
+  background-color: #ffffff;
+  color: #d9534f;
+}
+
+/* Estilos para imágenes dentro de los botones */
+.button img {
+  padding-left: 50px; /* Espacio a la izquierda */
+  width: 90px; /* Ancho del icono */
+  height: 90px; /* Altura del icono */
+}
+
+/* Estilos para el pie de página */
+footer.footer {
+  position: fixed; /* Fijo en la parte inferior */
+  bottom: 0; /* Pegado al fondo */
+  left: 0;
+  right: 0;
+  height: 60px; /* Altura fija */
+  background-color: rgba(128, 128, 128, 0.5); /* Fondo semitransparente */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* Asegura que el footer esté encima de otros elementos */
+}
+
+footer .icon-left,
+footer .icon-right {
+  font-size: 24px;
+  color: #fff;
+  margin: 0 10px;
+}
+
+footer .footer-content {
+  flex-grow: 1;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+footer .circle-wrapper {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+}
+
+footer .icon-home {
+  font-size: 40px;
+  color: #fff;
+  position: relative;
+  z-index: 3;
+}
+
+footer .icon-nav {
+  font-size: 40px;
+  color: #fff;
+  margin: 0 10px;
+  position: relative;
+  z-index: 3;
+}
+
+footer .icon-elipsis {
+  font-size: 30px;
+  color: #fff;
+  margin: 0 10px;
+  position: relative;
+  z-index: 3;
+}
+
+/* Pseudo-elemento para cubrir el fondo del footer */
+footer::before {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-57%); /* Ajusta la posición horizontal */
+  width: 300px;
+  height: 170px;
+  background-color: rgba(73, 73, 73, 0.6);
+  border-radius: 100% 100%; /* Forma de óvalo */
+  z-index: 1;
+}
+
+/* Círculo principal del footer */
+footer .circle {
+  position: absolute;
+  bottom: -110px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 170px;
+  background-color: rgba(0, 61, 89, 0.6);
+  border-radius: 100% 100%;
+  z-index: 2;
+  border: 2px solid white;
+}
+
+/* Estilos generales para los íconos en el pie de página */
+.footer i {
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  border-radius: 50%;
+}
+
+.footer i:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #007bff;
+  transform: scale(1.1);
+}
+
+
+
